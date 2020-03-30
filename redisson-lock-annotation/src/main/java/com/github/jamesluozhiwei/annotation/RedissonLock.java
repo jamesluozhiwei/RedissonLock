@@ -23,7 +23,7 @@ public @interface RedissonLock {
     RedissonLockModel lockModel() default RedissonLockModel.AUTO;
 
     /**
-     * 需加锁的资源键 读取方法的参数 支持springEL
+     * 需加锁的资源键 读取方法中的参数列表 支持springEL
      * @return
      */
     String[] keys() default {};
