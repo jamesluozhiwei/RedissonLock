@@ -36,7 +36,7 @@ public @interface RedissonLock {
     String keyConstant() default "";
 
     /**
-     * 锁超时时间，默认30000毫秒
+     * 锁超时时间，默认30000毫秒 超过该时间则释放锁
      * @return
      */
     long lockWatchdogTimeout() default 0;
